@@ -503,14 +503,19 @@ body::before {
 }
 
 .seal-hint {
-    margin-top: 15px;
-    color: var(--gold-light);
-    font-size: 8px;
+    margin-top: 18px;
+    color: #e5d5a8;
+    font-size: 9px;
     letter-spacing: 2px;
     text-align: center;
     white-space: nowrap;
+    
+    /* Контрастная тень для четкого чтения на любом фоне */
+    text-shadow: 
+        0 1px 4px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(23, 39, 28, 0.9);
+    font-weight: 500;
 }
-
 .envelope-wrapper.is-open .wax-seal-container {
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.4) rotate(15deg);
