@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#263b2b">
+
+    <title>Владимир & Ольга | Свадебное приглашение</title>
+
+    <!-- ШРИФТЫ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- СТИЛИ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="locked">
+
+    <!-- КУРСОР -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- ПРОГРЕСС ПРОКРУТКИ -->
+    <div class="scroll-progress"></div>
+
+    <!-- ЗОЛОТАЯ ПЫЛЬ -->
+    <div class="floating-particles" aria-hidden="true"></div>
+
+
+    <!-- =====================================
+         МУЗЫКА (СРЕДНЕВЕКОВАЯ ЛЮТНЯ/КЕЛЬТИКА)
+    ====================================== -->
+
+    <audio id="bg-music" loop preload="none">
+        <source
+            src="images/music.mp3"
+            type="audio/mpeg">
+    </audio>
+
+    <button
+        id="music-btn"
+        class="music-button"
+        type="button"
+        aria-label="Включить музыку">
+
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
+        </svg>
+
+    </button>
+
+
+    <!-- =====================================
+         00. ПЕРВАЯ СТРАНИЦА — 3D КОНВЕРТ
+    ====================================== -->
+
+    <div id="invitation-gate">
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="envelope-back"></div>
+                <div class="envelope-letter">
+                    <div class="letter-content-inner">
+                        <div class="royal-symbol">♛</div>
+                        <p class="letter-caption">A ROYAL WEDDING INVITATION</p>
+                        <h1 class="letter-initials">Владимир <span>&</span> Ольга</h1>
+                        <p class="letter-subtitle">С величайшей радостью приглашаем вас разделить с нами этот особенный день</p>
+                        <p class="letter-date">14 · 05 · 2027</p>
+                    </div>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-top"></div>
+                
+                <div class="wax-seal-container" id="open-letter">
+                    <div class="wax-seal">
+                        <span class="wax-border">
+                            <span class="wax-initials">В & О</span>
+                            <span class="wax-symbol">♛</span>
+                        </span>
+                    </div>
+                    <p class="seal-hint">НАЖМИТЕ НА ПЕЧАТЬ, ЧТОБЫ ОТКРЫТЬ ПИСЬМО</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================
+         ОСНОВНОЙ САЙТ
+    ====================================== -->
+
+    <main id="main-content">
+
+
+        <!-- =================================
+             01. ГЛАВНЫЙ ЭКРАН С ВИДЕО
+        ================================== -->
+
+        <section class="hero-section">
+
+            <!-- ФОНОВОЕ ВИДЕО В НАЧАЛЕ -->
+            <video id="hero-video-player" class="hero-video" autoplay muted loop playsinline preload="auto">
+                <source src="images/video_hero.MOV" type="video/quicktime">
+                <source src="images/video_hero.MOV" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-frame"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    Wedding Invitation
+                </p>
+
+                <div class="hero-crown">♛</div>
+
+                <h1 class="hero-title">
+
+                    <span class="hero-name">
+                        Владимир
+                    </span>
+
+                    <span class="hero-ampersand">
+                        &
+                    </span>
+
+                    <span class="hero-name">
+                        Ольга
+                    </span>
+
+                </h1>
+
+                <div class="hero-divider"></div>
+
+                <p class="hero-date">
+                    14 · 05 · 2027
+                </p>
+
+                <p class="hero-scroll">
+                    НАША ИСТОРИЯ НАЧИНАЕТСЯ ЗДЕСЬ
+                    <span>↓</span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             02. ПИСЬМО-ПРИГЛАШЕНИЕ
+        ================================== -->
+
+        <section class="invitation-section parchment-section">
+
+            <img
+                src="images/rose-branch.png"
+                class="rose-decoration rose-invitation"
+                alt=""
+                aria-hidden="true">
+
+            <div class="letter-card reveal-up">
+
+                <div class="letter-inner-frame"></div>
+
+                <p class="small-cap">
+                    ДОРОГИЕ ДРУЗЬЯ И РОДНЫЕ
+                </p>
+
+                <h2>
+                    Мы приглашаем вас!
+                </h2>
+
+                <div class="letter-ornament">
+                    <span></span>
+                    <i></i>
+                    <span></span>
+                </div>
+
+                <div class="letter-message">
+
+                    <p>
+                        В этот день мы хотим разделить с вами самое
+                        важное и сокровенное — день создания нашей семьи.
+                    </p>
+
+                    <p>
+                        Приглашаем вас окунуться в атмосферу старинной
+                        сказки, разделить с нами радость и стать
+                        частью нашей истории.
+                    </p>
+
+                </div>
+
+                <p class="letter-signature">
+                    С любовью, Владимир & Ольга
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             03. ТАЙМЕР
+        ================================== -->
+
+        <section class="countdown-section">
+
+            <div class="countdown-top-line"></div>
+
+            <p class="countdown-caption">
+                ДО НАШЕГО ТОРЖЕСТВА ОСТАЛОСЬ
+            </p>
+
+            <h2>
+                Считаем дни до встречи
+            </h2>
+
+            <div class="countdown-grid" id="countdown">
+
+                <div class="countdown-item">
+                    <span id="days">000</span>
+                    <small>Дней</small>
+                </div>
+
+                <i>:</i>
+
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <small>Часов</small>
+                </div>
+
+                <i>:</i>
+
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <small>Минут</small>
+                </div>
+
+                <i>:</i>
+
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <small>Секунд</small>
+                </div>
+
+            </div>
+
+            <div class="countdown-bottom-line"></div>
+
+        </section>
+
+
+        <!-- =================================
+             04. МАЛЕНЬКИЕ МЫ
+        ================================== -->
+
+        <section class="childhood-section">
+
+            <div class="section-heading reveal-text">
+
+                <p class="small-cap">
+                    OUR MEMORIES
+                </p>
+
+                <h2>
+                    Маленькие мы
+                </h2>
+
+                <p>
+                    Задолго до того, как мы встретились,
+                    судьба уже плела узор нашей истории...
+                </p>
+
+            </div>
+
+
+            <div class="childhood-grid">
+
+                <!-- ДЕТСТВО ОЛЬГИ -->
+
+                <div class="childhood-photo reveal-up">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=700&auto=format&fit=crop"
+                        alt="Детство Ольги">
+
+                    <span>
+                        Будущая невеста
+                    </span>
+
+                </div>
+
+
+                <div class="childhood-heart">
+                    ♡
+                </div>
+
+
+                <!-- ДЕТСТВО ВЛАДИМИРА -->
+
+                <div class="childhood-photo reveal-up">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1503454537195-1dc5b281fc12?q=80&w=700&auto=format&fit=crop"
+                        alt="Детство Владимира">
+
+                    <span>
+                        Будущий жених
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             05. НАША ИСТОРИЯ
+        ================================== -->
+
+        <section class="story-section parchment-section">
+
+            <div class="story-container">
+
+                <div class="story-photo reveal-up">
+
+                    <div class="story-photo-frame">
+
+                        <img
+                            src="images/photo_1.jpg"
+                            alt="Владимир и Ольга">
+
+                    </div>
+
+                </div>
+
+
+                <div class="story-text reveal-up">
+
+                    <p class="small-cap">
+                        ONCE UPON A TIME
+                    </p>
+
+                    <h2>
+                        Наша история
+                    </h2>
+
+                    <div class="simple-divider"></div>
+
+                    <p>
+                        Всё началось с простой случайности
+                        в маленькой кофейне на углу.
+                        Один взгляд, одна чашка кофе —
+                        и мы поняли, что нашли друг друга.
+                    </p>
+
+                    <p>
+                        С тех пор мы прошли множество дорог,
+                        пережили сотни закатов и рассветов.
+                        И теперь готовы сделать самый важный шаг.
+                    </p>
+
+                    <p class="story-signature">
+                        И наша сказка продолжается...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <img
+                src="images/rose-branch.png"
+                class="rose-decoration rose-story"
+                alt=""
+                aria-hidden="true">
+
+        </section>
+
+
+        <!-- =================================
+             05.5. НАШИ МОМЕНТЫ 
+        ================================== -->
+
+        <section class="moments-section parchment-section">
+
+            <div class="section-heading reveal-text">
+
+                <p class="small-cap">
+                    SWEET MOMENTS
+                </p>
+
+                <h2>
+                    Наши моменты
+                </h2>
+
+                <div class="simple-divider"></div>
+
+            </div>
+
+            <div class="moments-grid">
+
+                <!-- ФОТО 1 -->
+                <div class="moment-photo-card reveal-up">
+                    <div class="moment-photo-frame">
+                        <img src="images/photo_2.jpg">
+                    </div>
+                    <span>Счастливый день</span>
+                </div>
+
+                <!-- ФОТО 2 -->
+                <div class="moment-photo-card reveal-up">
+                    <div class="moment-photo-frame">
+                        <img src="images/photo_3.jpg">
+                    </div>
+                    <span>Вместе навсегда</span>
+                </div>
+
+            </div>
+
+            <img
+                src="images/rose-branch.png"
+                class="rose-decoration rose-moments"
+                alt=""
+                aria-hidden="true">
+
+        </section>
+
+
+        <!-- =================================
+             06. ПРОГРАММА ДНЯ
+        ================================== -->
+
+        <section class="program-section parchment-section">
+
+            <div class="section-heading reveal-text">
+
+                <p class="small-cap">
+                    OUR SPECIAL DAY
+                </p>
+
+                <h2>
+                    Программа дня
+                </h2>
+
+                <div class="simple-divider"></div>
+
+            </div>
+
+
+            <div class="program-grid">
+
+                <article class="program-card reveal-up">
+
+                    <span class="program-number">01</span>
+
+                    <p class="program-time">15:00</p>
+
+                    <h3>
+                        Церемония регистрации
+                    </h3>
+
+                    <p>
+                        Начало нашей семейной истории
+                    </p>
+
+                </article>
+
+
+                <article class="program-card reveal-up">
+
+                    <span class="program-number">02</span>
+
+                    <p class="program-time">16:30</p>
+
+                    <h3>
+                        Сбор гостей
+                    </h3>
+
+                    <p>
+                        Замок Green House, зал «Средневековый»
+                    </p>
+
+                </article>
+
+
+                <article class="program-card reveal-up">
+
+                    <span class="program-number">03</span>
+
+                    <p class="program-time">17:00</p>
+
+                    <h3>
+                        Начало банкета
+                    </h3>
+
+                    <p>
+                        Праздничный ужин и развлечения
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             07. ДЕТАЛИ ПРАЗДНИКА
+        ================================== -->
+
+        <section class="details-section parchment-section">
+
+            <div class="section-heading reveal-text">
+
+                <p class="small-cap">
+                    A FEW IMPORTANT WORDS
+                </p>
+
+                <h2>
+                    Детали нашего праздника
+                </h2>
+
+                <div class="simple-divider"></div>
+
+            </div>
+
+
+            <div class="details-grid">
+
+                <article class="detail-letter reveal-up">
+
+                    <div class="detail-top-line"></div>
+
+                    <h3>
+                        Вместо цветов
+                    </h3>
+
+                    <p>
+                        Мы будем счастливы получить от вас
+                        бутылочку вашего любимого напитка в нашу семейную
+                        коллекцию вместо букета.
+                    </p>
+
+                </article>
+
+
+                <article class="detail-letter reveal-up">
+
+                    <div class="detail-top-line"></div>
+
+                    <h3>
+                        Подарки
+                    </h3>
+
+                    <p>
+                        Самый ценный подарок для нас —
+                        ваше присутствие. Но если вы хотите
+                        сделать нам приятно, будем рады вкладу
+                        в наш семейный бюджет.
+                    </p>
+
+                </article>
+
+
+                <article class="detail-letter reveal-up">
+
+                    <div class="detail-top-line"></div>
+
+                    <h3>
+                        Дети
+                    </h3>
+
+                    <p>
+                        Пожалуйста, оставьте своих деток
+                        в надёжных руках на вечер торжества,
+                        так как наша программа и локация
+                        не предполагает детской зоны и аниматоров.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <img
+                src="images/rose-branch.png"
+                class="rose-decoration rose-details"
+                alt=""
+                aria-hidden="true">
+
+        </section>
+
+
+        <!-- =====================================
+             08. ДРЕСС-КОД
+        ====================================== -->
+
+        <section class="dress-section">
+
+            <div class="section-heading reveal-text">
+
+                <p class="small-cap">
+                    OUR WEDDING PALETTE
+                </p>
+
+                <h2>Дресс-код</h2>
+
+                <p>
+                    Нам будет очень приятно, если вы
+                    поддержите цветовую гамму нашего праздника.
+                </p>
+
+            </div>
+
+
+            <div class="dress-palette">
+
+                <!-- БЕЖЕВЫЙ -->
+
+                <article class="dress-palette-row reveal-up">
+
+                    <div class="dress-color color-beige">
+                        <span class="color-number">01</span>
+                        <h3>Тёплый бежевый</h3>
+                        <small>#DACDBD</small>
+                    </div>
+
+                    <div class="dress-fabric fabric-beige"></div>
+
+                </article>
+
+
+                <!-- ПЫЛЬНАЯ РОЗА -->
+
+                <article class="dress-palette-row reveal-up">
+
+                    <div class="dress-color color-rose">
+                        <span class="color-number">02</span>
+                        <h3>Пыльная роза</h3>
+                        <small>#C09B9C</small>
+                    </div>
+
+                    <div class="dress-fabric fabric-rose"></div>
+
+                </article>
+
+
+                <!-- ШАЛФЕЙ -->
+
+                <article class="dress-palette-row reveal-up">
+
+                    <div class="dress-color color-sage">
+                        <span class="color-number">03</span>
+                        <h3>Шалфей</h3>
+                        <small>#9CA287</small>
+                    </div>
+
+                    <div class="dress-fabric fabric-sage"></div>
+
+                </article>
+
+
+                <!-- ГОЛУБОЙ -->
+
+                <article class="dress-palette-row reveal-up">
+
+                    <div class="dress-color color-blue">
+                        <span class="color-number">04</span>
+                        <h3>Приглушённый голубой</h3>
+                        <small>#9DB3D2</small>
+                    </div>
+
+                    <div class="dress-fabric fabric-blue"></div>
+
+                </article>
+
+            </div>
+
+
+            <p class="dress-note">
+                Выбирайте оттенок, который вам по душе.
+                Главное — ваше присутствие и хорошее настроение!
+            </p>
+
+        </section>
+
+
+        <!-- =================================
+             09. МЕСТО ПРОВЕДЕНИЯ
+        ================================== -->
+
+        <section class="location-section">
+
+            <div class="section-heading reveal-text">
+
+                <p class="small-cap">
+                    OUR ROYAL VENUE
+                </p>
+
+                <h2>
+                    Место проведения
+                </h2>
+
+                <p>
+                    Замок Green House<br>
+                    Зал «Средневековый», 1 этаж
+                </p>
+
+            </div>
+
+
+            <div class="location-map reveal-up">
+
+                <iframe
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb4b9942127e293f39fc5246e5389343402ea3488632fdffd652ac545d14786f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    title="Карта места проведения"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+
+            <a
+                href="https://yandex.ru/maps/-/CXv~eUnt"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-link">
+
+                Посмотреть маршрут
+
+            </a>
+
+        </section>
+
+
+        <!-- =================================
+             10. RSVP — АНКЕТА ГОСТЕЙ
+        ================================== -->
+
+        <section class="rsvp-section parchment-section">
+
+            <img
+                src="images/rose-branch.png"
+                class="rose-decoration rose-rsvp"
+                alt=""
+                aria-hidden="true">
+
+
+            <div class="section-heading reveal-text">
+
+                <p class="small-cap">
+                    PLEASE REPLY
+                </p>
+
+                <h2>
+                    Будем ждать вас!
+                </h2>
+
+                <p>
+                    Пожалуйста, заполните анкету
+                    до 1 мая 2027 года.
+                </p>
+
+            </div>
+
+
+            <form
+                id="rsvp-form"
+                class="rsvp-form reveal-up">
+
+                <label>
+                    Ваше имя и фамилия
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Введите ваше имя"
+                        autocomplete="name"
+                        required>
+                </label>
+
+
+                <label>
+                    Придёте ли вы?
+
+                    <select name="attendance" required>
+
+                        <option value="" disabled selected>
+                            Выберите ответ
+                        </option>
+
+                        <option value="Да, обязательно!">
+                            Да, обязательно!
+                        </option>
+
+                        <option value="К сожалению, не смогу">
+                            К сожалению, не смогу
+                        </option>
+
+                    </select>
+                </label>
+
+
+                <label>
+                    С кем вы придёте?
+
+                    <select name="company">
+
+                        <option value="" disabled selected>
+                            Выберите вариант
+                        </option>
+
+                        <option value="Один / Одна">
+                            Один / Одна
+                        </option>
+
+                        <option value="С супругом / супругой">
+                            С супругом / супругой
+                        </option>
+
+                        <option value="С другом / подругой">
+                            С другом / подругой
+                        </option>
+
+                    </select>
+                </label>
+
+
+                <label>
+                    Предпочтения по напиткам
+
+                    <select name="drinks">
+
+                        <option value="" disabled selected>
+                            Что предпочитаете?
+                        </option>
+
+                        <option value="Вино">
+                            Вино
+                        </option>
+
+                        <option value="Шампанское">
+                            Шампанское
+                        </option>
+
+                        <option value="Крепкие напитки">
+                            Крепкие напитки
+                        </option>
+
+                        <option value="Безалкогольные напитки">
+                            Безалкогольные напитки
+                        </option>
+
+                    </select>
+                </label>
+
+
+                <label>
+                    Пожелания или комментарии
+
+                    <textarea
+                        name="comment"
+                        rows="3"
+                        placeholder="Ваши пожелания..."></textarea>
+                </label>
+
+
+                <button type="submit">
+                    Отправить ответ
+                </button>
+
+            </form>
+
+
+            <!-- =================================
+                 11. ЧАТ ГОСТЕЙ
+            ================================== -->
+
+            <div class="guest-chat reveal-up">
+
+                <div class="guest-chat-line"></div>
+
+                <p class="guest-chat-caption">
+                    LET'S STAY CONNECTED
+                </p>
+
+                <h2>
+                    Чат гостей
+                </h2>
+
+                <p class="guest-chat-text">
+                    Хотите познакомиться с другими гостями,
+                    задать вопросы или просто разделить
+                    ожидание нашего праздника?
+                </p>
+
+                <p class="guest-chat-subtext">
+                    Присоединяйтесь к нашему общему чату!
+                </p>
+
+                <a
+                    href="ВСТАВЬТЕ_ССЫЛКУ_НА_ЧАТ"
+                    class="guest-chat-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span class="chat-button-text">
+                        Присоединиться к чату
+                    </span>
+
+                    <span class="chat-button-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+                <p class="guest-chat-footer">
+                    Будем рады видеть каждого!
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             12. ФИНАЛ
+        ================================== -->
+
+        <section class="final-section">
+
+            <img
+                src="images/rose-branch.png"
+                class="rose-decoration rose-final"
+                alt=""
+                aria-hidden="true">
+
+            <div class="final-content">
+
+                <p class="final-script">
+                    До скорой встречи!
+                </p>
+
+                <div class="final-divider"></div>
+
+                <h2>
+                    Владимир <span>&</span> Ольга
+                </h2>
+
+                <p class="final-date">
+                    14 · 05 · 2027
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             FOOTER
+        ================================== -->
+
+        <footer class="footer">
+
+            <p>
+                С любовью, Владимир & Ольга
+            </p>
+
+            <span>2027</span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- БИБЛИОТЕКИ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+    <!-- ОСНОВНОЙ JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
