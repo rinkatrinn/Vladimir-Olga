@@ -256,71 +256,6 @@
 
 
         <!-- =================================
-             04. МАЛЕНЬКИЕ МЫ
-        ================================== -->
-
-        <section class="childhood-section">
-
-            <div class="section-heading reveal-text">
-
-                <p class="small-cap">
-                    OUR MEMORIES
-                </p>
-
-                <h2>
-                    Маленькие мы
-                </h2>
-
-                <p>
-                    Задолго до того, как мы встретились,
-                    судьба уже плела узор нашей истории...
-                </p>
-
-            </div>
-
-
-            <div class="childhood-grid">
-
-                <!-- ДЕТСТВО ОЛЬГИ -->
-
-                <div class="childhood-photo reveal-up">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=700&auto=format&fit=crop"
-                        alt="Детство Ольги">
-
-                    <span>
-                        Будущая невеста
-                    </span>
-
-                </div>
-
-
-                <div class="childhood-heart">
-                    ♡
-                </div>
-
-
-                <!-- ДЕТСТВО ВЛАДИМИРА -->
-
-                <div class="childhood-photo reveal-up">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1503454537195-1dc5b281fc12?q=80&w=700&auto=format&fit=crop"
-                        alt="Детство Владимира">
-
-                    <span>
-                        Будущий жених
-                    </span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================
              05. НАША ИСТОРИЯ
         ================================== -->
 
@@ -409,7 +344,7 @@
                 <!-- ФОТО 1 -->
                 <div class="moment-photo-card reveal-up">
                     <div class="moment-photo-frame">
-                        <img src="images/photo_2.jpg">
+                        <img src="images/photo_2.jpg" alt="Момент 1">
                     </div>
                     <span>Счастливый день</span>
                 </div>
@@ -417,7 +352,7 @@
                 <!-- ФОТО 2 -->
                 <div class="moment-photo-card reveal-up">
                     <div class="moment-photo-frame">
-                        <img src="images/photo_3.jpg">
+                        <img src="images/photo_3.jpg" alt="Момент 2">
                     </div>
                     <span>Вместе навсегда</span>
                 </div>
@@ -719,7 +654,10 @@
             <div class="location-map reveal-up">
 
                 <iframe
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb4b9942127e293f39fc5246e5389343402ea3488632fdffd652ac545d14786f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb4b9942127e293f39fc5246e5389343402ea3488632fdffd652ac545d14786f&amp;source=constructor"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
                     title="Карта места проведения"
                     loading="lazy"
                     allowfullscreen>
@@ -742,7 +680,7 @@
 
 
         <!-- =================================
-             10. RSVP — АНКЕТА ГОСТЕЙ
+             10. RSVP — АНКЕТА ГОСТЕЙ (ЯНДЕКС.ФОРМА)
         ================================== -->
 
         <section class="rsvp-section parchment-section">
@@ -765,119 +703,25 @@
                 </h2>
 
                 <p>
-                    Пожалуйста, заполните анкету
+                    Пожалуйста, подтвердите своё присутствие
                     до 1 мая 2027 года.
                 </p>
 
             </div>
 
 
-            <form
-                id="rsvp-form"
-                class="rsvp-form reveal-up">
-
-                <label>
-                    Ваше имя и фамилия
-
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Введите ваше имя"
-                        autocomplete="name"
-                        required>
-                </label>
-
-
-                <label>
-                    Придёте ли вы?
-
-                    <select name="attendance" required>
-
-                        <option value="" disabled selected>
-                            Выберите ответ
-                        </option>
-
-                        <option value="Да, обязательно!">
-                            Да, обязательно!
-                        </option>
-
-                        <option value="К сожалению, не смогу">
-                            К сожалению, не смогу
-                        </option>
-
-                    </select>
-                </label>
-
-
-                <label>
-                    С кем вы придёте?
-
-                    <select name="company">
-
-                        <option value="" disabled selected>
-                            Выберите вариант
-                        </option>
-
-                        <option value="Один / Одна">
-                            Один / Одна
-                        </option>
-
-                        <option value="С супругом / супругой">
-                            С супругом / супругой
-                        </option>
-
-                        <option value="С другом / подругой">
-                            С другом / подругой
-                        </option>
-
-                    </select>
-                </label>
-
-
-                <label>
-                    Предпочтения по напиткам
-
-                    <select name="drinks">
-
-                        <option value="" disabled selected>
-                            Что предпочитаете?
-                        </option>
-
-                        <option value="Вино">
-                            Вино
-                        </option>
-
-                        <option value="Шампанское">
-                            Шампанское
-                        </option>
-
-                        <option value="Крепкие напитки">
-                            Крепкие напитки
-                        </option>
-
-                        <option value="Безалкогольные напитки">
-                            Безалкогольные напитки
-                        </option>
-
-                    </select>
-                </label>
-
-
-                <label>
-                    Пожелания или комментарии
-
-                    <textarea
-                        name="comment"
-                        rows="3"
-                        placeholder="Ваши пожелания..."></textarea>
-                </label>
-
-
-                <button type="submit">
-                    Отправить ответ
-                </button>
-
-            </form>
+            <!-- ВСТРОЕННАЯ ЯНДЕКС.ФОРМА -->
+            <div class="yandex-form-wrapper reveal-up">
+                <script src="https://forms.yandex.ru/_static/embed.js"></script>
+                <iframe 
+                    src="https://forms.yandex.ru/u/6af1dc09974ab27667bde0f8?iframe=1" 
+                    frameborder="0" 
+                    name="ya-form-6af1dc09974ab27667bde0f8" 
+                    width="100%" 
+                    height="680"
+                    title="Анкета гостя">
+                </iframe>
+            </div>
 
 
             <!-- =================================
